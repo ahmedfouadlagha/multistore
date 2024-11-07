@@ -76,10 +76,10 @@ $active_record = TRUE;//ci version 2.x
 
 $db['default'] = array(
     'dsn'      => '',
-    'hostname' => getenv('DB_HOST') ?: 'localhost', // Uses 'localhost' if DB_HOST is not set
-    'username' => getenv('DB_USERNAME') ?: '',       // Default to empty, replace with actual username for localhost
-    'password' => getenv('DB_PASSWORD') ?: '',       // Default to empty, replace with actual password for localhost
-    'database' => getenv('DB_DATABASE') ?: 'ghu',    // Uses 'ghu' as default database
+    'hostname' => 'z37udk8g6jiaqcbx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com', // Uses 'localhost' if DB_HOST is not set
+    'username' => 'stsofbewbe7ql252',       // Default to empty, replace with actual username for localhost
+    'password' => 'hy2oi2f1jc8ikotq',       // Default to empty, replace with actual password for localhost
+    'database' => 'pnh1aussf5ul1dky',    // Uses 'ghu' as default database
     'dbdriver' => 'mysqli',
     'dbprefix' => '',
     'pconnect' => FALSE,

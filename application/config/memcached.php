@@ -13,8 +13,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $config = array(
     'default' => array(
-        'hostname' => getenv('MEMCACHIER_SERVERS') ? getenv('MEMCACHIER_SERVERS') : '127.0.0.1',
-        'port'     => getenv('MEMCACHIER_PORT') ? getenv('MEMCACHIER_PORT') : '11211',
+        'hostname' => '127.0.0.1',
+        'port'     => '11211',
         'weight'   => '1',
     ),
 );
