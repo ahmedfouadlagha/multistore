@@ -75,11 +75,11 @@ $query_builder = TRUE;
 $active_record = TRUE;//ci version 2.x
 
 $db['default'] = array(
-    'dsn'   => '',
-    'hostname' => 'localhost',
-    'username' => '',
-    'password' => '',
-    'database' => 'ghu',
+    'dsn'      => '',
+    'hostname' => getenv('DB_HOST') ?: 'localhost', // Uses 'localhost' if DB_HOST is not set
+    'username' => getenv('DB_USERNAME') ?: '',       // Default to empty, replace with actual username for localhost
+    'password' => getenv('DB_PASSWORD') ?: '',       // Default to empty, replace with actual password for localhost
+    'database' => getenv('DB_DATABASE') ?: 'ghu',    // Uses 'ghu' as default database
     'dbdriver' => 'mysqli',
     'dbprefix' => '',
     'pconnect' => FALSE,
@@ -91,9 +91,9 @@ $db['default'] = array(
     'swap_pre' => '',
     'encrypt'  => FALSE,
     'compress' => FALSE,
-    'autoinit' => TRUE,//ci version 2.x
     'stricton' => FALSE,
     'failover' => array(),
     'save_queries' => TRUE
 );
+
  
